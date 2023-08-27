@@ -1,0 +1,108 @@
+header {
+    background-color: #a5ced5;
+    height: 48px;
+    position: relative;
+    height: 80px;
+
+    nav {
+        width: 200px;
+        position: absolute;
+        top: -71px;
+        z-index: -1;
+        right: 0;
+        
+
+        ul {
+
+            li {
+                list-style: none;
+                background-color: #546d78;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: block;
+                    padding: 3px 12px;
+                }
+            }
+        }
+    }
+}
+
+/* acciones y clases */
+
+@mixin icono {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    cursor: pointer;
+
+}
+
+.logo {
+    width: 150px;
+    margin: 14px;
+}
+
+.checkbox {
+    @include icono;
+    opacity: 0;
+}
+
+.desplegar {
+    @include icono;
+    pointer-events: none;
+}
+
+.cancelar {
+    @include icono;
+    display: none;
+    pointer-events: none;
+}
+
+.checkbox:checked~.desplegar {
+    display: none;
+}
+
+.checkbox:checked~.cancelar {
+    display: block;
+
+}
+
+.checkbox:checked~.menu {
+    display: block;
+    top: 80px;
+    transition: 250ms;
+}
+
+.menu li a:hover {
+    background-color: #456789;
+}
+
+@media (min-width: 767px) {
+
+    .checkbox, .cancelar, .desplegar {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        top: 25px;
+        z-index: 1;
+        width: 100%;
+        margin-right: 20px;
+        transition: none;
+
+        ul {
+            width: auto;
+            display: flex;
+            justify-content: end;
+
+            li {
+                background-color: #a5ced5;  
+            }
+        } 
+    }
+}
