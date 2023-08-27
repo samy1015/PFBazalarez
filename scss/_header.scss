@@ -101,7 +101,11 @@ header {
             justify-content: end;
 
             li {
-                background-color: #a5ced5;  
+                background-color: #a5ced5;
+
+                a {
+                    border-radius: 20px;
+                }
             }
         } 
     }

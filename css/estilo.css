@@ -103,6 +103,9 @@ header nav ul li a {
   .menu ul li {
     background-color: #a5ced5;
   }
+  .menu ul li a {
+    border-radius: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
