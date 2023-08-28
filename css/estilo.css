@@ -4,18 +4,25 @@
   box-sizing: border-box;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+/* header */
 header {
-  background-color: #a5ced5;
-  height: 48px;
-  position: relative;
   height: 80px;
+  background-color: #a5ced5;
+  position: fixed;
+  width: 100%;
 }
 header nav {
   width: 200px;
   position: absolute;
-  top: -71px;
-  z-index: -1;
+  top: 80px;
   right: 0;
+  opacity: 0;
+  transition: 250ms;
 }
 header nav ul li {
   list-style: none;
@@ -28,7 +35,8 @@ header nav ul li a {
   padding: 3px 12px;
 }
 
-/* acciones y clases */
+/* mixin */
+/* clases */
 .logo {
   width: 150px;
   margin: 14px;
@@ -76,36 +84,97 @@ header nav ul li a {
 .checkbox:checked ~ .menu {
   display: block;
   top: 80px;
-  transition: 250ms;
+  opacity: 100;
 }
 
 .menu li a:hover {
-  background-color: #456789;
+  background-color: #546d78;
 }
 
-@media (min-width: 767px) {
+/* responsive */
+@media (min-width: 670px) {
   .checkbox, .cancelar, .desplegar {
     display: none;
   }
-  .menu {
+  .logo {
+    width: 200px;
+    margin: 15px;
+  }
+  header {
+    height: 100px;
+  }
+  header .menu {
     display: block;
-    top: 25px;
+    top: 33px;
     z-index: 1;
     width: 100%;
     margin-right: 20px;
     transition: none;
   }
-  .menu ul {
-    width: auto;
+  header .menu ul {
     display: flex;
     justify-content: end;
+    right: 20px;
+    top: 0;
   }
-  .menu ul li {
+  header .menu ul li {
     background-color: #a5ced5;
   }
-  .menu ul li a {
+  header .menu ul li a {
     border-radius: 20px;
+    font-size: 0.9rem;
   }
+}
+@media (min-width: 1023px) {
+  header {
+    height: 150px;
+  }
+  header .menu {
+    top: 55px;
+  }
+  header .menu li a {
+    font-size: 1.2rem !important;
+  }
+  .logo {
+    width: 250px;
+    margin: 30px;
+  }
+}
+/* main inicio */
+.mainInicio {
+  width: 100%;
+  height: 1000px;
+  padding-top: 80px;
+}
+.mainInicio h1 {
+  position: absolute;
+  z-index: -2;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+footer img {
+  width: 100px;
+  margin: auto;
+}
+footer nav {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer nav li {
+  width: 20px;
+  list-style: none;
+  margin: auto 20px;
+}
+
+/* clases */
+.logoRedes {
+  width: 100%;
 }
 
 /*# sourceMappingURL=estilo.css.map */
