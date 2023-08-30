@@ -33,6 +33,7 @@ header nav ul li a {
   color: inherit;
   display: block;
   padding: 3px 12px;
+  color: white;
 }
 
 /* mixin */
@@ -84,7 +85,7 @@ header nav ul li a {
 .checkbox:checked ~ .menu {
   display: block;
   top: 80px;
-  opacity: 100;
+  opacity: 1;
 }
 
 .menu li a:hover {
@@ -110,6 +111,7 @@ header nav ul li a {
     width: 100%;
     margin-right: 20px;
     transition: none;
+    opacity: 1;
   }
   header .menu ul {
     display: flex;
@@ -143,12 +145,32 @@ header nav ul li a {
 /* main inicio */
 .mainInicio {
   width: 100%;
-  height: 1000px;
-  padding-top: 80px;
+  margin-top: 80px;
 }
-.mainInicio h1 {
-  position: absolute;
-  z-index: -2;
+.mainInicio div img {
+  width: 100%;
+}
+.mainInicio div h1 {
+  padding: 20px 10px;
+  background-color: black;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  margin: 0;
+}
+.mainInicio section {
+  margin-bottom: 50px;
+}
+.mainInicio section h2 {
+  font-size: 3vw;
+  text-align: center;
+  padding: 20px 10px;
+  margin: 40px auto;
+}
+.mainInicio section iframe {
+  width: 85vw;
+  height: 50vw;
+  margin: auto 7%;
 }
 
 /* footer */
