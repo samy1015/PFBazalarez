@@ -11,10 +11,10 @@
         }
 
         h1 {
-            padding: 20px 10px;
+            padding: 70px 10px;
             background-color: black;
             text-align: center;
-            font-size: 5vw;
+            font-size: 4vw;
             color: white;
             margin: 0;
         }
@@ -22,7 +22,9 @@
 
     section {
         margin-bottom: 50px;
-
+        display: flex;
+        flex-direction: column;
+        
         h2 {
             font-size: 3vw;
             text-align: center;
@@ -33,7 +35,51 @@
         iframe {
             width: 85vw;
             height: 50vw;
-            margin: auto 7%;
+            margin: auto;
+        }
+    }
+}
+
+    /* responsive tamaño pequeño */
+
+@media (min-width: 670px) {
+
+    .mainInicio {
+        margin-top: 100px;
+
+        section {
+            
+            h2 {
+                font-size: 2vw;
+                padding: 40px 0;
+            }
+            
+            iframe {
+                width: 60vw;
+                height: 40vw;
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+
+    /* responsive tamaño mediano */
+@media (min-width: 1023px) {
+
+    .mainInicio {
+        margin-top: 150px;
+
+        section {
+
+            h2 {
+                padding: 70px 0;
+            }
+
+            iframe {
+                width: 40vw;
+                height: 25vw;
+                margin-bottom: 100px;
+            }
         }
     }
 }

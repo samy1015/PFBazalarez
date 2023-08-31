@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -39,8 +40,8 @@ header nav ul li a {
 /* mixin */
 /* clases */
 .logo {
-  width: 150px;
-  margin: 14px;
+  width: 210px;
+  margin: 5px;
 }
 
 .checkbox {
@@ -98,8 +99,8 @@ header nav ul li a {
     display: none;
   }
   .logo {
-    width: 200px;
-    margin: 15px;
+    width: 265px;
+    margin: 5px;
   }
   header {
     height: 100px;
@@ -138,8 +139,8 @@ header nav ul li a {
     font-size: 1.2rem !important;
   }
   .logo {
-    width: 250px;
-    margin: 30px;
+    width: 390px;
+    margin: 9px;
   }
 }
 /* main inicio */
@@ -151,15 +152,17 @@ header nav ul li a {
   width: 100%;
 }
 .mainInicio div h1 {
-  padding: 20px 10px;
+  padding: 70px 10px;
   background-color: black;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
   color: white;
   margin: 0;
 }
 .mainInicio section {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .mainInicio section h2 {
   font-size: 3vw;
@@ -170,9 +173,38 @@ header nav ul li a {
 .mainInicio section iframe {
   width: 85vw;
   height: 50vw;
-  margin: auto 7%;
+  margin: auto;
 }
 
+/* responsive tamaño pequeño */
+@media (min-width: 670px) {
+  .mainInicio {
+    margin-top: 100px;
+  }
+  .mainInicio section h2 {
+    font-size: 2vw;
+    padding: 40px 0;
+  }
+  .mainInicio section iframe {
+    width: 60vw;
+    height: 40vw;
+    margin-bottom: 70px;
+  }
+}
+/* responsive tamaño mediano */
+@media (min-width: 1023px) {
+  .mainInicio {
+    margin-top: 150px;
+  }
+  .mainInicio section h2 {
+    padding: 70px 0;
+  }
+  .mainInicio section iframe {
+    width: 40vw;
+    height: 25vw;
+    margin-bottom: 100px;
+  }
+}
 /* footer */
 footer {
   background-color: black;
