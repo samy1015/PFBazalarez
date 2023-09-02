@@ -245,16 +245,27 @@ footer nav li {
 }
 .mainProyectos .bloque {
   margin: 70px 1%;
+  background-color: #a5ced5;
+  padding-bottom: 20px;
 }
-.mainProyectos .bloque h2 {
+.mainProyectos .bloque .subtitulo {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d405c;
+}
+.mainProyectos .bloque .subtitulo h2 {
   font-size: 1.2rem;
   text-align: center;
   margin: 30px;
+  text-transform: uppercase;
+  color: white;
 }
 .mainProyectos .bloque h3 {
   font-size: 0.8rem;
   font-weight: bolder;
-  margin: 20px 3%;
+  margin: 15px 3%;
 }
 .mainProyectos .bloque .galeria {
   display: flex;
