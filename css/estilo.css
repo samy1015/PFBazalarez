@@ -245,7 +245,7 @@ footer nav li {
 }
 .mainProyectos .bloque {
   margin: 70px 1%;
-  background-color: #a5ced5;
+  background-color: #dceaef;
   padding-bottom: 20px;
 }
 .mainProyectos .bloque .subtitulo {
@@ -285,6 +285,7 @@ footer nav li {
   border-radius: 5px;
   min-height: 150px;
   max-height: 150px;
+  border: 2px solid black;
 }
 
 /*# sourceMappingURL=estilo.css.map */
