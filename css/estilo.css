@@ -41,7 +41,7 @@ header nav ul li a {
 /* mixin */
 /* clases */
 .logo {
-  width: 210px;
+  width: 200px;
   margin: 5px;
 }
 
@@ -222,16 +222,9 @@ footer nav li {
   .desplegar {
     display: none;
   }
-  .logo {
-    width: 265px;
-    margin: 5px;
-  }
-  header {
-    height: 100px;
-  }
   header .menu {
     display: block;
-    top: 33px;
+    top: 28px;
     z-index: 1;
     width: 100%;
     transition: none;
@@ -252,7 +245,7 @@ footer nav li {
   }
   /* responsive inicio */
   .mainInicio {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .mainInicio section h2 {
     font-size: 2vw;
@@ -265,7 +258,7 @@ footer nav li {
   }
   /* responsive proyectos */
   .mainProyectos {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .mainProyectos .bloque .galeria {
     display: flex;
@@ -292,11 +285,8 @@ footer nav li {
 /* responsive grande */
 @media (min-width: 1023px) {
   /* responsive header */
-  header {
-    height: 150px;
-  }
   header .menu {
-    top: 55px;
+    top: 25px;
   }
   header .menu li {
     margin: auto 10px;
@@ -304,13 +294,9 @@ footer nav li {
   header .menu li a {
     font-size: 1.2rem !important;
   }
-  .logo {
-    width: 390px;
-    margin: 9px;
-  }
   /* responsive inicio */
   .mainInicio {
-    margin-top: 150px;
+    margin-top: 80px;
   }
   .mainInicio section h2 {
     padding: 70px 0;
@@ -322,7 +308,7 @@ footer nav li {
   }
   /* responsive proyectos */
   .mainProyectos {
-    margin-top: 150px;
+    margin-top: 80px;
   }
   .mainProyectos .bloque {
     padding-left: 10%;

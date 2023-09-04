@@ -32,17 +32,11 @@
         display: none;
     }
 
-    .logo {
-        width: 265px;
-        margin: 5px;
-    }
-
     header {
-        height: 100px;
 
         .menu {
             display: block;
-            top: 33px;
+            top: 28px;
             z-index: 1;
             width: 100%;
             transition: none;
@@ -68,7 +62,7 @@
 
     /* responsive inicio */
     .mainInicio {
-        margin-top: 100px;
+        margin-top: 80px;
 
         section {
 
@@ -87,7 +81,7 @@
 
     /* responsive proyectos */
     .mainProyectos {
-        margin-top: 100px;
+        margin-top: 80px;
 
         .bloque {
 
@@ -124,10 +118,9 @@
 
     /* responsive header */
     header {
-        height: 150px;
 
         .menu {
-            top: 55px;
+            top: 25px;
 
             li {
                 margin: auto 10px;
@@ -139,14 +132,9 @@
         }
     }
 
-    .logo {
-        width: 390px;
-        margin: 9px;
-    }
-
     /* responsive inicio */
     .mainInicio {
-        margin-top: 150px;
+        margin-top: 80px;
 
         section {
 
@@ -164,7 +152,7 @@
 
     /* responsive proyectos */
     .mainProyectos {
-        margin-top: 150px;
+        margin-top: 80px;
 
         .bloque {
             padding-left: 10%;
