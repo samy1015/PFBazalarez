@@ -1,0 +1,179 @@
+/* responsive pequeño */
+@media (max-width: 670px) {
+
+    /* responsive proyectos */
+    .galeria {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        margin: auto;
+        column-gap: 15px;
+
+        img {
+            width: 80%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid black;
+            max-height: 300px;
+            min-height: 300px;
+            max-width: 400px;
+        }
+
+    }
+}
+
+/* responsive mediano*/
+@media (min-width: 671px) {
+
+    /* responsive header */
+    .checkbox,
+    .cancelar,
+    .desplegar {
+        display: none;
+    }
+
+    .logo {
+        width: 265px;
+        margin: 5px;
+    }
+
+    header {
+        height: 100px;
+
+        .menu {
+            display: block;
+            top: 33px;
+            z-index: 1;
+            width: 100%;
+            transition: none;
+            opacity: 1;
+
+            ul {
+                display: flex;
+                justify-content: end;
+                top: 0;
+
+                li {
+                    background-color: #a5ced5;
+
+                    a {
+                        border-radius: 20px;
+                        font-size: 0.9rem;
+                        padding: 0 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* responsive inicio */
+    .mainInicio {
+        margin-top: 100px;
+
+        section {
+
+            h2 {
+                font-size: 2vw;
+                padding: 40px 0;
+            }
+
+            iframe {
+                width: 60vw;
+                height: 40vw;
+                margin-bottom: 70px;
+            }
+        }
+    }
+
+    /* responsive proyectos */
+    .mainProyectos {
+        margin-top: 100px;
+
+        .bloque {
+
+            .galeria {
+                display: flex;
+                width: 700px;
+                height: 300px;
+                margin: 50px auto;
+
+                img {
+                    border: 2px solid black;
+                }
+            }
+        }
+    }
+
+    .galeria img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        filter: brightness(70%);
+        transition: 0.7s ease;
+    }
+
+    .galeria img:hover {
+        width: 450px;
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
+/* responsive grande */
+@media (min-width: 1023px) {
+
+    /* responsive header */
+    header {
+        height: 150px;
+
+        .menu {
+            top: 55px;
+
+            li {
+                margin: auto 10px;
+
+                a {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+    }
+
+    .logo {
+        width: 390px;
+        margin: 9px;
+    }
+
+    /* responsive inicio */
+    .mainInicio {
+        margin-top: 150px;
+
+        section {
+
+            h2 {
+                padding: 70px 0;
+            }
+
+            iframe {
+                width: 40vw;
+                height: 25vw;
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    /* responsive proyectos */
+    .mainProyectos {
+        margin-top: 150px;
+
+        .bloque {
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .galeria {
+                width: 80%;
+                height: 450px;
+            }
+        }
+    }
+}

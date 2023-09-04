@@ -2,6 +2,8 @@
 
 .mainProyectos {
     margin-top: 80px;
+    width: 100%;
+    padding: 0;
 
     h1 {
         text-align: center;
@@ -13,9 +15,10 @@
     }
 
     .bloque {
-        margin: 70px 1%;
+        margin: 70px 0;
         background-color: #dceaef;
         padding-bottom: 20px;
+        width: 100%;
 
         .subtitulo {
             height: 70px;
@@ -37,29 +40,6 @@
             font-size: 0.8rem;
             font-weight: bolder;
             margin: 15px 3%;
-        }
-
-        .galeria {
-            display: flex;
-            align-items: center;
-            column-gap: 20px;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-
-            div {
-                scroll-snap-align: center;
-                min-width: 70%;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 5px;
-                    min-height: 150px;
-                    max-height: 150px;
-                    border: 2px solid black;
-                }
-            }
         }
     }
 }

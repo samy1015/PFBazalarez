@@ -5,6 +5,7 @@ header {
     background-color: #a5ced5;
     position: fixed;
     width: 100%;
+    z-index: 1;
 
     nav {
         width: 200px;
@@ -13,7 +14,7 @@ header {
         right: 0;
         opacity: 0;
         transition: 250ms;
-        
+
         ul {
 
             li {
@@ -32,7 +33,7 @@ header {
     }
 }
 
-    /* mixin */
+/* mixin */
 
 @mixin icono {
     width: 30px;
@@ -44,7 +45,7 @@ header {
 
 }
 
-    /* clases */
+/* clases */
 .logo {
     width: 210px;
     margin: 5px;
@@ -66,13 +67,13 @@ header {
     pointer-events: none;
 }
 
+/* acciones */
 .checkbox:checked~.desplegar {
     display: none;
 }
 
 .checkbox:checked~.cancelar {
     display: block;
-
 }
 
 .checkbox:checked~.menu {
@@ -83,70 +84,4 @@ header {
 
 .menu li a:hover {
     background-color: #546d78;
-}
-
-    /* responsive */
-@media (min-width: 670px) {
-
-    .checkbox, .cancelar, .desplegar {
-        display: none;
-    }
-
-    .logo {
-        width: 265px;
-        margin: 5px;
-    }
-
-    header {
-        height: 100px;
-
-        .menu {
-            display: block;
-            top: 33px;
-            z-index: 1;
-            width: 100%;
-            margin-right: 20px;
-            transition: none;
-            opacity: 1;
-
-            ul {
-                display: flex;
-                justify-content: end;
-                right: 20px;
-                top: 0;
-
-                li {
-                    background-color: #a5ced5;
-
-                    a {
-                        border-radius: 20px;
-                        font-size: 0.9rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1023px) {
-
-    header {
-        height: 150px;
-
-        .menu {
-            top: 55px;
-
-            li {
-
-                a {
-                    font-size: 1.2rem !important;
-                }
-            }
-        }
-    }
-
-    .logo {
-        width: 390px;
-        margin: 9px;
-    }
 }
