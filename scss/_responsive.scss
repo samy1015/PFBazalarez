@@ -1,5 +1,5 @@
 /* responsive pequeño */
-@media (max-width: 670px) {
+@media (max-width: 767px) {
 
     /* responsive proyectos */
     .galeria {
@@ -20,10 +20,51 @@
         }
 
     }
+
+    /* resposive servicios */
+    .mainServicios {
+
+        section {
+
+            div {
+
+                h3 {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+
+    /* responsive quienes somos */
+    .mainQuienesSomos {
+    
+        p {
+            padding: 0 10%;
+        }
+    
+        h2 {
+            padding: 0 5%;
+        }
+    }
+
+    /* responsive contacto */
+    .mainConto {
+        padding: 50px 5% 40px;
+
+        section {
+
+            div {
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 /* responsive mediano*/
-@media (min-width: 671px) {
+@media (min-width: 768px) {
 
     /* responsive header */
     .checkbox,
@@ -88,7 +129,6 @@
             .galeria {
                 display: flex;
                 width: 700px;
-                height: 80%;
                 max-height: 300px;
                 margin: 50px auto;
 
@@ -111,6 +151,45 @@
         width: 450px;
         opacity: 1;
         filter: brightness(100%);
+    }
+
+    /* responsive quienes somos */
+    .mainQuienesSomos {
+
+        p {
+            padding: 0 15%;
+        }
+
+        h2 {
+            padding: 0 10%;
+        }
+    }
+
+    /* responsive contacto */
+    .mainContactanos {
+        padding-top: 100px;
+
+        section {
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                form {
+                    margin: auto;
+
+                    h2 {
+                        text-align: center;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+            }
+        }
     }
 }
 
@@ -163,6 +242,17 @@
                 width: 80%;
                 height: 450px;
             }
+        }
+    }
+
+    .mainQuienesSomos {
+
+        p {
+            padding: 0 30%;
+        }
+
+        h2 {
+            padding: 0 27%;
         }
     }
 }
