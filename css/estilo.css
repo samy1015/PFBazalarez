@@ -333,5 +333,26 @@ footer nav li {
     height: 450px;
   }
 }
+.mainServicio {
+  margin-top: 80px;
+}
+.mainServicio section div {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainServicio section img {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+}
+.mainServicio section p {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=estilo.css.map */
