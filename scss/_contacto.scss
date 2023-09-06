@@ -1,48 +1,53 @@
 /* contactanos */
 .mainContacto {
     margin-top: 80px;
+    background-color: #dceaef;
+
+    h1 {
+        text-align: center;
+        padding: 35px;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        background-color: black;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 80px 5%;
+        text-align: center;
+    }
 
     section {
 
-        div {
+        form {
             display: flex;
-            width: 100%;
+            flex-direction: column;
+            background-color: #546d78;
 
-            img {
-                width: 60%;
-                margin: auto;
-            }
-
-            form {
-                margin: auto 5% auto auto;
+            div {
                 display: flex;
                 flex-direction: column;
 
-                h2 {
-                    font-size: 1.5rem;
-                    margin-bottom: 40px;
+                label {
+                    font-weight: bolder;
                 }
 
-                div {
-                    margin: 10px;
-                    display: flex;
-                    flex-direction: column;
-
-                    label {
-                        margin-right: 20px;
-                    }
-
-                    input {
-                        width: auto;
-                        margin: 3%;
-                        max-width: 300px;
-                    }
-
-                    textarea {
-                        width: auto;
-                        margin: 3%;
-                    }
+                input {
+                    border-radius: 10px;
                 }
+
+                textarea {
+                    border-radius: 10px;
+                }
+            }
+
+            .button {
+                border-radius: 10px;
+                width: 80px;
+                margin: 15px 0 auto auto;
+
             }
         }
     }

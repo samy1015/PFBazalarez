@@ -225,11 +225,24 @@ footer nav li {
     padding: 0 5%;
   }
   /* responsive contacto */
-  .mainConto {
-    padding: 50px 5% 40px;
-  }
-  .mainConto section div img {
+  .mainContacto section .fondoContacto {
     display: none;
+  }
+  .mainContacto section form {
+    margin: auto;
+    max-width: 500px;
+    padding: 40px;
+    margin-bottom: 100px;
+  }
+  .mainContacto section form div label {
+    margin-right: 10px;
+    font-size: 1.3rem;
+  }
+  .mainContacto section form div input {
+    margin-bottom: 30px;
+  }
+  .mainContacto section form div textarea {
+    height: 150px;
   }
 }
 /* responsive mediano*/
@@ -307,23 +320,32 @@ footer nav li {
     padding: 0 10%;
   }
   /* responsive contacto */
-  .mainContactanos {
-    padding-top: 100px;
-  }
-  .mainContactanos section div {
+  .mainContacto section {
+    width: 750px;
+    height: 813px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-  }
-  .mainContactanos section div form {
     margin: auto;
   }
-  .mainContactanos section div form h2 {
-    text-align: center;
+  .mainContacto section .fondoContacto {
+    position: absolute;
+    object-fit: cover;
+    width: 750px;
   }
-  .mainContactanos section div img {
-    width: 100%;
-    margin-top: 50px;
+  .mainContacto section form {
+    width: 350px;
+    margin: auto 20% 85px 5%;
+    position: relative;
+    padding: 10px 20px;
+  }
+  .mainContacto section form div label {
+    font-size: 0.9rem;
+  }
+  .mainContacto section form div input {
+    margin-bottom: 5px;
+  }
+  .mainContacto section form div textarea {
+    height: 150px;
   }
 }
 /* responsive grande */
@@ -431,40 +453,44 @@ footer nav li {
 /* contactanos */
 .mainContacto {
   margin-top: 80px;
+  background-color: #dceaef;
 }
-.mainContacto section div {
-  display: flex;
-  width: 100%;
+.mainContacto h1 {
+  text-align: center;
+  padding: 35px;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
 }
-.mainContacto section div img {
-  width: 60%;
-  margin: auto;
-}
-.mainContacto section div form {
-  margin: auto 5% auto auto;
-  display: flex;
-  flex-direction: column;
-}
-.mainContacto section div form h2 {
+.mainContacto h2 {
   font-size: 1.5rem;
-  margin-bottom: 40px;
+  margin: 80px 5%;
+  text-align: center;
 }
-.mainContacto section div form div {
-  margin: 10px;
+.mainContacto section form {
+  display: flex;
+  flex-direction: column;
+  background-color: #546d78;
+}
+.mainContacto section form div {
   display: flex;
   flex-direction: column;
 }
-.mainContacto section div form div label {
-  margin-right: 20px;
+.mainContacto section form div label {
+  font-weight: bolder;
 }
-.mainContacto section div form div input {
-  width: auto;
-  margin: 3%;
-  max-width: 300px;
+.mainContacto section form div input {
+  border-radius: 10px;
 }
-.mainContacto section div form div textarea {
-  width: auto;
-  margin: 3%;
+.mainContacto section form div textarea {
+  border-radius: 10px;
+}
+.mainContacto section form .button {
+  border-radius: 10px;
+  width: 80px;
+  margin: 15px 0 auto auto;
 }
 
 /*# sourceMappingURL=estilo.css.map */

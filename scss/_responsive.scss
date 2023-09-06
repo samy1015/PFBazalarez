@@ -37,26 +37,45 @@
 
     /* responsive quienes somos */
     .mainQuienesSomos {
-    
+
         p {
             padding: 0 10%;
         }
-    
+
         h2 {
             padding: 0 5%;
         }
     }
 
     /* responsive contacto */
-    .mainConto {
-        padding: 50px 5% 40px;
+    .mainContacto {
 
         section {
 
-            div {
+            .fondoContacto {
+                display: none;
+            }
 
-                img {
-                    display: none;
+            form {
+                margin: auto;
+                max-width: 500px;
+                padding: 40px;
+                margin-bottom: 100px;
+
+                div {
+    
+                    label {
+                        margin-right: 10px;
+                        font-size: 1.3rem;
+                    }
+    
+                    input {
+                        margin-bottom: 30px;
+                    }
+    
+                    textarea {
+                        height: 150px;
+                    }
                 }
             }
         }
@@ -166,27 +185,40 @@
     }
 
     /* responsive contacto */
-    .mainContactanos {
-        padding-top: 100px;
+    .mainContacto {
 
         section {
+            width: 750px;
+            height: 813px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
 
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+            .fondoContacto {
+                position: absolute;
+                object-fit: cover;
+                width: 750px;
+            }
 
-                form {
-                    margin: auto;
+            form {
+                width: 350px;
+                margin: auto 20% 85px 5%;
+                position: relative;
+                padding: 10px 20px;
 
-                    h2 {
-                        text-align: center;
+                div {
+    
+                    label {
+                        font-size: 0.9rem;
                     }
-                }
-
-                img {
-                    width: 100%;
-                    margin-top: 50px;
+    
+                    input {
+                        margin-bottom: 5px;
+                    }
+    
+                    textarea {
+                        height: 150px;
+                    }
                 }
             }
         }
