@@ -140,10 +140,13 @@ footer img {
 }
 footer nav {
   margin: 20px auto;
+}
+footer nav ul {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
-footer nav li {
+footer nav ul li {
   width: 20px;
   list-style: none;
   margin: auto 20px;
@@ -480,6 +483,7 @@ footer nav li {
 }
 .mainContacto section form div label {
   font-weight: bolder;
+  color: gainsboro;
 }
 .mainContacto section form div input {
   border-radius: 10px;
